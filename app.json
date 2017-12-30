@@ -1,0 +1,9 @@
+{
+  "name": "FoodReact",
+  "displayName": "FoodReact",
+  "expo": {
+    "name": "FoodReact",
+    "slug": "food-react",
+    "sdkVersion": "15.0.0"
+  }
+}
