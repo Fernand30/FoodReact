@@ -1,20 +1,19 @@
 import {StyleSheet} from 'react-native'
 const React = require("react-native");
 const { Dimensions, Platform } = React;
-import { responsiveHeight, responsiveWidth, responsiveFontSize } from 'react-native-responsive-dimensions';
+import {Colors, Fonts, Metrics, Images, Constants} from "../../themes"
 const deviceHeight = Dimensions.get("window").height;
-const imagesize = responsiveHeight(10);
 export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fa7d64'
   },
   headerView: {
-    marginTop: 10,
+    marginTop: Constants.Marin2,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 10
+    paddingHorizontal: Constants.Marin4
   },
   text: {
     textAlign: 'center'
@@ -22,46 +21,48 @@ export default StyleSheet.create({
   headerTextInputView: {
     flex: 1,
     flexDirection: 'row',
-    height: 45,
+    height: Constants.Marin12,
     borderRadius: 3,
     backgroundColor: 'white',
     alignItems: 'center',
-    marginHorizontal: 10,
-    marginTop: 5,
-    marginBottom: 5,
+    marginHorizontal: Constants.Marin2,
+    marginTop: Constants.Marin2,
+    marginBottom: Constants.Marin2,
 
   },
   HeaderSearchTabView:{
-    marginTop: 10,
+    marginTop: Constants.Marin2,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: "#fa7d64",
-    paddingHorizontal: 8
+    paddingHorizontal: Constants.Marin2,
   },
   searchImage: {
-    marginLeft: 10
+    marginLeft: Constants.Marin2,
   },
   headerTextInput: {
     flex: 1,
-    marginLeft: 10,
+    marginLeft: Constants.Marin2,
     color: "#fa7d64",
-    fontSize:13,
+    fontSize:Constants.Font16,
   },
   TabView:{
-    marginTop: 10,
+    marginTop: Constants.Marin2,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 10
+    paddingHorizontal: Constants.Marin2,
   },
   selecTabText:{
     color: 'white',
-    fontFamily: 'CORBEL'
+    fontFamily: 'CORBEL',
+    fontSize: Constants.Font2
   },
   tabText:{
     color: '#deb4ab',
-    fontFamily: 'CORBEL'
+    fontFamily: 'CORBEL',
+    fontSize: Constants.Font2
   },
   scrollView:{
     flex: 1,
@@ -69,14 +70,14 @@ export default StyleSheet.create({
   },
   headerRightView:{
     justifyContent:'center',
-    marginTop: 10
+    marginTop: Constants.Marin1,
   },
   lookButton:{
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: Constants.Marin4,
+    marginBottom: Constants.Marin2,
     flexDirection: 'row',
-    height: 45,
-    marginHorizontal: 20,
+    height: Constants.Marin12,
+    marginHorizontal: Constants.Marin4,
     borderRadius: 2,
     alignItems: 'center',
     justifyContent: 'center',
@@ -87,16 +88,16 @@ export default StyleSheet.create({
   notificationview:{
     position: 'absolute',
     top: -5,
-    right: -5,
-    width: 16,
-    height: 16,
-    borderRadius: 8,
+    right: -10,
+    width: Constants.Marin4,
+    height: Constants.Marin4,
+    borderRadius: Constants.Marin2,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center'
   },
   notificationNumber:{
-    fontSize: 12,
+    fontSize: Constants.Font1,
     color: '#fa7d64'
   },
   buttonText:{

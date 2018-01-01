@@ -51,7 +51,7 @@ class MenuFlatList extends Component {
   }
 
   goaddcard(){
-    Actions.qty()
+    Actions.qtylist()
   }
 
   render(){
@@ -95,46 +95,31 @@ class MenuFlatList extends Component {
                     <View style={styles.rowView}>
                         <Text style={styles.largeText}>California Tortilla</Text>
                         <Image source={Images.star} style={styles.starImage}/>
-                        <View style={styles.columnView}>
-                            <Text style={styles.smallText}>4.</Text>
-                            <Text style={styles.smallText}>5</Text>
-                        </View>
+                        <Text style={styles.smallText}>4.5</Text>
                     </View>
-                    <Text style={styles.mexcianText}>mexcian{'\n'}vegetarian</Text>
+                    <Text style={styles.mexcianText}>Mexcian Vegetarian</Text>
                     <View style={styles.rowflexView}>
                           <View style={styles.eachView}>
-                                <Text style={styles.smallText}>$2.9</Text>
-                                <Text style={styles.smallText}>9</Text>
-                                <Text style={styles.smallshaText}>Delivery{'\n'}Fee</Text>
+                                <Text style={styles.smallblackText}>$2.99</Text>
+                                <Text style={styles.smallshaText}>Delivery Fee</Text>
                           </View>
                           <View style={styles.empytView}/>
                           <View style={styles.eachView}>
-                                <Text style={styles.smallText}>$2.9</Text>
-                                <Text style={styles.smallText}>9</Text>
-                                <Text style={styles.smallshaText}>Delivery{'\n'}Fee</Text>
+                                <Text style={styles.smallblackText}>$10</Text>
+                                <Text style={styles.smallshaText}>Delivery Fee</Text>
                           </View>
                           <View style={styles.empytView}/>
                           <View style={styles.eachView}>
-                                <Text style={styles.smallText}>$2.9</Text>
-                                <Text style={styles.smallText}>9</Text>
-                                <Text style={styles.smallshaText}>Delivery{'\n'}Fee</Text>
+                                <Text style={styles.smallblackText}>30-45 Mins</Text>
+                                <Text style={styles.smallshaText}>Delivery Fee</Text>
                           </View>
                     </View>
                 </View>
            </View>
            <View style={{flex:1}}>
                <View style={styles.buttonView}>
-                    <View style={styles.buttonColumnView}>
-                        <View style={styles.buttonRowView}>
-                            <Image source={Images.ticket} style={styles.ticketImage}/>
-                            <Text style={styles.text}>5</Text>
-                        </View>
-                        <Text style={styles.plusText}>+</Text>
-                    </View>
-                    <View style={styles.buttonColumnView}>
-                        <Text style={styles.redText}>Deals Abailable for</Text>
-                        <Text style={styles.redText}>Delivery!</Text>
-                    </View>
+                  <Image source={Images.ticket} style={styles.ticketImage}/>
+                  <Text style={styles.text}>5+ Deals Abailable for Delivery!</Text>
                </View>
                <View style={styles.commonFlexView}>
                   <Text style={styles.columnText}>Burritos</Text>
@@ -147,17 +132,16 @@ class MenuFlatList extends Component {
                     <Image source={Images.Bitmap} style={styles.BitmapImage}/>
                     <View style={styles.commonColumnView}>
                         <Text style={styles.columnText}>Godzilla Burrito Jalapeno</Text>
-                        <Text style={styles.smallshaText}>Big fat Burrito handcrafted by{'\n'}crazy</Text>
+                        <Text style={styles.smallshaText}>Big fat Burrito handcrafted by crazy...</Text>
                     </View>
                     <View style={styles.commonMarginView}>
                         <Text style={styles.columnText}>$10.95</Text>
                     </View>
                </View>
-               <View style={styles.shadowView}>
-                    
-                    <View style={styles.commonColumnView}>
+               <View style={styles.shadowView1}>
+                    <View style={styles.commonColumnView1}>
                         <Text style={styles.columnText}>Godzilla Burrito Jalapeno</Text>
-                        <Text style={styles.smallshaText}>Big fat Burrito handcrafted by{'\n'}crazy</Text>
+                        <Text style={styles.smallshaText}>Big fat Burrito handcrafted by crazy...</Text>
                     </View>
                     <View style={styles.commonMarginView}>
                         <Text style={styles.columnText}>$10.95</Text>

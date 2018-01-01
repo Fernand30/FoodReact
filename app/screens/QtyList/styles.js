@@ -14,15 +14,16 @@ export default StyleSheet.create({
     resizeMode: 'cover',
   },
   absoluteView:{
-    position: 'absolute',
-    top: 20,
-    width: responsiveWidth(100),
     backgroundColor: 'white',
-    height: responsiveHeight(100)-20
   },
   backButtonstyle:{
     position: 'absolute',
     top: 20,  
+    left: 20,
+  },
+  backImage:{
+    position:'absolute',
+    top: 20,
     left: 20,
 
   },
@@ -41,6 +42,9 @@ export default StyleSheet.create({
   },
   commonColumnView:{
     justifyContent:'center'
+  },
+  buttonView:{
+    marginTop: 10,
   },
   columnText:{
     fontSize: 14,
@@ -127,6 +131,12 @@ export default StyleSheet.create({
   addbuttonText:{
     fontSize: 30,
   },
+  buttonText:{
+    color: '#FFF',
+    fontFamily: 'CORBEL',
+    fontSize:16,
+    marginTop:5,
+  },
   centerView:{
     marginTop: 20,
     alignItems:'center'
@@ -136,6 +146,7 @@ export default StyleSheet.create({
     justifyContent: 'flex-end', 
   },
   bottomButton:{
+    flexDirection:'row',
     paddingVertical: 10,
     backgroundColor: '#fa7d64',
     alignItems:'center',
@@ -146,7 +157,8 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'CORBEL',
     fontSize:16,
-    paddingVertical: responsiveHeight(1)
+    paddingVertical: responsiveHeight(0.5),
+    marginTop:5,
   },
   numberText:{
     color: 'white',

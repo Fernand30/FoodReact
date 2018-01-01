@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { View, ScrollView, Text, Image, FlatList, TouchableOpacity, ActivityIndicator, TextInput } from "react-native"
+import SegmentedControlTab from 'react-native-segmented-control-tab'
 import BasicButton from '../../components/BasicButton'
 import {removePlateFromCart} from '../../actions/cart'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { List, ListItem, SearchBar, ButtonGroup,CheckBox} from "react-native-elements"
+import { List, ListItem, SearchBar, ButtonGroup} from "react-native-elements"
 import { Actions } from 'react-native-router-flux'
 import {Colors, Fonts, Metrics, Images, Constants} from "../../themes"
 
@@ -21,6 +22,8 @@ class Cart extends Component {
       check1: true,
       check2: false,
       check3: false,
+      isLeft: true,
+      selectedIndex: 0,
     })
 }
   
@@ -71,6 +74,16 @@ class Cart extends Component {
     Actions.pop()
   }
 
+  goConfirm(){
+    Actions.confirmorder()
+  }
+
+  handleIndexChange = (index) => {
+      this.setState({
+        selectedIndex: index,
+      });
+    }
+
   render() {
     let cart = JSON.stringify(this.props.cart)
     return (
@@ -110,36 +123,62 @@ class Cart extends Component {
               </View>  
            </View>
            <View style={styles.shadowView}>
-               <Text style={styles.smallText}>Choose from your saved{'\n'}address</Text>
-               <Image source={Images.dropdown}/>
+               <View style={styles.childRowView}>
+                  <Image source={Images.greencheck} style={styles.greenCheck}/>
+                  <Text style={styles.smallunshaText}>Saved VISA x-4679</Text>
+               </View>
+               <View style={styles.childRowView}>
+                  <Text style={styles.smallunshaText}>Change</Text>
+                  <Image source={Images.dropdown}  style={styles.dropdown}/>
+               </View>
            </View>
-           <Text style={styles.itemText}>Your Street Address</Text>
+           <Text style={styles.itemText}>PAYMENT METHOD</Text>
+           <View style={styles.selectButtonView}>
+              <SegmentedControlTab
+                    values={['CredientCard', 'Paypal']}
+                    selectedIndex={this.state.selectedIndex}
+                    onTabPress={this.handleIndexChange}
+                    tabTextStyle={{color: '#0d9f67'}}
+                    tabStyle={{borderColor: '#0d9f67'}}
+                    activeTabStyle={{backgroundColor: '#0d9f67'}}
+                    />
+           </View>
            <View style={styles.shadowColumnView}>
                <View style={styles.underlineView}>
-                  <Text style={styles.smallText}>Street Address</Text>
+                  <Text style={styles.smallText}>Card Holder Name</Text>
+                  <TextInput style={styles.textInput} value='Lousia Simonss'/>
                </View>
                <View style={styles.underlineView}>
-                  <Text style={styles.smallText}>Apt No / Room No / Suite</Text>
-               </View>
-               <View style={styles.underlineView}>
-                  <Text style={styles.smallText}>City</Text>
+                  <Text style={styles.smallText}>Card Number</Text>
+                  <TextInput style={styles.textInput} value='2521 5587 3476 4343'/>
                </View>
                <View style={styles.underlinerowView}>
                   <View style={styles.leftView}>
-                      <Text style={styles.smallText}>Zip Code</Text>
+                      <Text style={styles.smallText}>Expiry Date</Text>
+                      <Text style={styles.smallText1}>12/18</Text>
                   </View>
                   <View style={styles.rightView}>
-                      <Text style={styles.smallText}>State</Text>
-                      <Image source={Images.dropdown}/>
+                      <Text style={styles.smallText}>CVV</Text>
+                      <Text style={styles.smallText}></Text>
                   </View>
                </View>
            </View>
-           <Text style={styles.itemText}>Delivery Instructions</Text>
-           <View style={styles.shadowColumnView1}>               
-               <Text style={styles.smallText}>Address code,parking,directions or any{'\n'}notes...</Text>               
+           
+           <View style={styles.underlineView1}>
+              <View style={{flexDirection:'row'}}>
+                  <View style={styles.checkView}>
+                      <Image source={Images.check} />
+                  </View>
+                  <Text style={styles.smallText2}>Don&rsquo;t ask me card details next time</Text>
+              </View>   
            </View>
+           <View style={styles.underlineView1}>
+              <Text style={styles.smallText}>TOTAL:</Text>
+              <Text style={styles.smallText1}>$320</Text>
+           </View>
+           
            <View style={styles.bottomView}>
-              <TouchableOpacity style={styles.buttonView} >
+              <TouchableOpacity onPress={this.goConfirm.bind(this)} style={styles.buttonView} >
                   <Text style={styles.buttonText}>CONTINUE TO CONFIRM</Text>
                   <Text style={styles.numberText}> ($13.59)</Text>
               </TouchableOpacity>

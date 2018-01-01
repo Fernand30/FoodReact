@@ -82,12 +82,36 @@ class Cart extends Component {
           <View style={{height:20}} style={styles.headerView}/>
           <View style={styles.headerView}>
               <TouchableOpacity onPress={this.goback.bind(this)}>
-                  <Image source={Images.arrow_right}/>
+                  <Image source={Images.close}/>
               </TouchableOpacity>
-              <Text style={styles.titleText}>YOUR CART</Text>
-              <TouchableOpacity>
-                  <Image source={Images.menu_hamburger}/>
-              </TouchableOpacity>  
+              <Text style={styles.titleText}>Confirm Order</Text>
+              <View/>  
+           </View>
+           <View style={styles.rView}>
+               <View style={styles.firstView}>
+                    <Image source={Images.done}/>
+               </View>
+               <View style={styles.lineView1}/>
+               <View style={styles.firstView}>
+                    <View style={styles.commaView}/>
+               </View>
+               <View style={styles.lineView2}/>
+               <View style={styles.secondView}>
+                    
+               </View>
+           </View>
+           <View style={styles.rowView1}>
+              <View style={{flex:1}}>
+               <Text style={styles.smallRedText}>Review</Text>
+              </View> 
+               <View style={{flex:1}}/>
+              <View style={{flex:1}}>
+               <Text style={styles.smallRedText}>Select</Text>
+              </View>  
+               <View style={{flex:1}}/>
+              <View style={{flex:1}}>
+               <Text style={styles.smallBlackText}>Confirm</Text>
+              </View>  
            </View>
            <View style={styles.shadowView}>
                <View style={styles.rowView}>
@@ -138,6 +162,24 @@ class Cart extends Component {
                     <View style={{flex:1}}/>
                </View>
            </View>
+           <View style={styles.tiprowView}>
+              <View style={styles.tipeachView1}>
+                <Text style={styles.tipText1}>Tip</Text>
+                <Text style={styles.tipText1}>15%</Text>
+              </View>
+              <View style={styles.tipeachView2}>
+                <Text style={styles.tipText}>Tip</Text>
+                <Text style={styles.tipText}>20%</Text>
+              </View>
+              <View style={styles.tipeachView2}>
+                <Text style={styles.tipText}>Tip</Text>
+                <Text style={styles.tipText}>25%</Text>
+              </View>
+              <View style={styles.tipeachView3}>
+                <Text style={styles.tipText2}>Confirm Tip</Text>
+                <Text style={styles.tipText3}>$2.29</Text>
+              </View>
+           </View>
            <View style={styles.columnView}>
                <View style={styles.rowflexView}>
                     <Text style={styles.commonText2}>Sub Total</Text>
@@ -158,7 +200,7 @@ class Cart extends Component {
               <Text style={styles.commonText}>$13.59</Text>
            </View>
            <View style={styles.bottomView}>
-              <TouchableOpacity onPress={this.goReview.bind(this)} style={styles.buttonView} >
+              <TouchableOpacity style={styles.buttonView} >
                   <Text style={styles.buttonText}>CONTINUE TO CONFIRM</Text>
                   <Text style={styles.numberText}> ($13.59)</Text>
               </TouchableOpacity>

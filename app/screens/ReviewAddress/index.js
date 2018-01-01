@@ -114,7 +114,7 @@ class Cart extends Component {
               </View>  
            </View>
            <View style={styles.shadowView}>
-               <Text style={styles.smallText}>Choose from your saved{'\n'}address</Text>
+               <Text style={styles.smallText}>Choose from your saved address</Text>
                <Image source={Images.dropdown}/>
            </View>
            <Text style={styles.itemText}>Your Street Address</Text>
@@ -140,7 +140,7 @@ class Cart extends Component {
            </View>
            <Text style={styles.itemText}>Delivery Instructions</Text>
            <View style={styles.shadowColumnView1}>               
-               <Text style={styles.smallText}>Address code,parking,directions or any{'\n'}notes...</Text>               
+               <Text style={styles.smallText}>Address code,parking,directions or any notes...</Text>               
            </View>
            <View style={styles.bottomView}>
               <TouchableOpacity onPress={this.goPayment.bind(this)} style={styles.buttonView} >

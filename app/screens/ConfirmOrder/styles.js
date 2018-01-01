@@ -24,6 +24,38 @@ export default StyleSheet.create({
     flex: 1,
     fontFamily: 'CORBEL',
   },
+  firstView:{
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:10,
+    width:20,
+    height: 20,
+    backgroundColor: '#fa7d64'
+  },
+  lineView1:{
+    flex:1,
+    height: 1,
+    backgroundColor: '#fa7d64'
+  },
+  commaView: {
+    width:5,
+    height:5,
+    borderRadius:2.5,
+    backgroundColor:'white'
+  },
+  secondView:{
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:10,
+    width:20,
+    height: 20,
+    backgroundColor: '#9b9b9b'
+  },
+  lineView2:{
+    flex:1,
+    height: 1,
+    backgroundColor: '#9b9b9b'
+  },
   shadowView: {
     shadowOffset:{  width: 2,  height: 3,  },
     shadowColor: 'black',
@@ -38,6 +70,31 @@ export default StyleSheet.create({
   rowView:{
     flexDirection: 'row',
     alignItems:'center'
+  },
+  rView:{
+    flexDirection: 'row',
+    alignItems:'center',
+    paddingHorizontal: 30,
+    justifyContent:'space-between',
+    marginTop: 20
+  },
+  smallRedText:{
+    fontSize: 14,
+    color:'#fa7d64',
+    textAlign:'center',
+    fontFamily: 'CORBEL',
+  },
+  smallBlackText:{
+    fontSize: 14,
+    textAlign:'center',
+    color: '#b9b2b2',
+    fontFamily: 'CORBEL',
+  },
+  rowView1:{
+    flexDirection: 'row',
+    alignItems:'center',
+    justifyContent:'space-between',
+    marginTop: 20
   },
   columnText:{
     fontSize: 14,
@@ -66,6 +123,34 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'CORBEL',
   },
+  tiprowView:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    paddingHorizontal:20,
+    paddingVertical:10,
+  },
+  tipeachView1:{
+    width: 40,
+    height: 40,
+    backgroundColor:'black',
+    borderWidth:1,
+    paddingTop:2,
+  },
+  tipeachView2:{
+    width: 40,
+    height: 40,
+    borderColor:'#9b9b9b',
+    borderWidth:1,
+    paddingTop:2,
+  },
+  tipeachView3:{
+    width: 150,
+    height: 40,
+    borderColor:'#9b9b9b',
+    borderWidth:1,
+    paddingTop:2,
+  },
   rowflexView:{
     flexDirection: 'row',
     alignItems:'center',
@@ -85,9 +170,32 @@ export default StyleSheet.create({
     backgroundColor:'white',
     paddingBottom: 20,
   },
+  tipText:{
+    fontSize : 14,
+    textAlign:'center',
+    fontFamily: 'CORBEL',
+  },
+  tipText1:{
+    fontSize : 14,
+    textAlign:'center',
+    fontFamily: 'CORBEL',
+    color:'white'
+  },
+  tipText2:{
+    fontSize : 14,
+    marginLeft: 10,
+    fontFamily: 'CORBEL',
+  },
+  tipText3:{
+    fontSize : 14,
+    textAlign:'right',
+    marginRight:10,
+    fontFamily: 'CORBEL',
+  },
   commonText:{
     fontSize : 14,
     marginLeft: 20,
+    fontFamily: 'CORBEL',
   },
   commonText2:{
     fontSize : 14,
@@ -101,7 +209,6 @@ export default StyleSheet.create({
     fontFamily: 'CORBEL',
   },
   columnView:{
-    marginTop:10,
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: '#b9b2b2',

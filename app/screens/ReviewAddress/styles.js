@@ -32,7 +32,7 @@ export default StyleSheet.create({
     marginTop: 20,
     marginHorizontal: 10,
     paddingHorizontal: 10,
-    paddingTop: 15,
+    paddingVertical: 20,
     flexDirection:'row',
     justifyContent:'space-between',
     alignItems:'center',
@@ -54,19 +54,22 @@ export default StyleSheet.create({
     borderRadius: 2,
     marginHorizontal: 10,
     marginTop: 10,
-    padding: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 20,
     backgroundColor:'white'
   },
   smallText:{
     fontSize:14,
     color: '#b9b2b2',
-    backgroundColor:'transparent'
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
   },
   itemText:{
     fontSize: 16,
     marginLeft: 10,
-    marginTop: 10,
+    marginTop: 20,
     color: '#b9b2b2',
+    fontFamily: 'CORBEL',
   },
   rowView:{
     flexDirection: 'row',
@@ -83,9 +86,11 @@ export default StyleSheet.create({
   },
   columnText:{
     fontSize: 14,
+    fontFamily: 'CORBEL',
   },
   largeText:{
     fontSize: 18,
+    fontFamily: 'CORBEL',
   },
   smallshaText:{
     fontSize: 12,
@@ -96,9 +101,10 @@ export default StyleSheet.create({
     marginLeft: 10,
     fontSize: 16,
     color: '#b9b2b2',
+    fontFamily: 'CORBEL',
   },
   underlineView:{
-    paddingVertical: 20,
+    paddingVertical: 10,
     borderBottomWidth: 1,
     borderColor: '#9b9b9b',
     justifyContent:'center',
@@ -108,7 +114,8 @@ export default StyleSheet.create({
     marginLeft: 30,
     fontSize: 14,
     color: '#fa7d64',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'CORBEL',
   },
   rowflexView:{
     flexDirection: 'row',
@@ -130,6 +137,7 @@ export default StyleSheet.create({
   commonText:{
     fontSize : 14,
     marginLeft: 20,
+    fontFamily: 'CORBEL',
   },
   commonText2:{
     fontSize : 14,
@@ -139,7 +147,8 @@ export default StyleSheet.create({
   commonText1:{
     fontSize : 16,
     flex: 1,
-    textAlign: 'right'
+    textAlign: 'right',
+    fontFamily: 'CORBEL',
   },
   columnView:{
     marginTop:10,
@@ -177,6 +186,7 @@ export default StyleSheet.create({
   numberText:{
     color: 'white',
     fontSize: 14,
+    fontFamily: 'CORBEL',
   },
   firstView:{
     alignItems:'center',
@@ -214,11 +224,13 @@ export default StyleSheet.create({
     fontSize: 14,
     color:'#fa7d64',
     textAlign:'center',
+    fontFamily: 'CORBEL',
   },
   smallBlackText:{
     fontSize: 14,
     textAlign:'center',
     color: '#b9b2b2',
+    fontFamily: 'CORBEL',
   },
   underlinerowView:{
     flexDirection:'row',

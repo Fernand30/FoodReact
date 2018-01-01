@@ -37,20 +37,20 @@ export default StyleSheet.create({
   commonFlexView:{
     flexDirection:'row',
     marginHorizontal: 10,
-    marginTop:  10,
+    marginTop:  20,
     justifyContent:'space-between',
     alignItems:'center'
   },
   buttonView:{
-    paddingHorizontal: 80,
     alignItems:'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     flexDirection: 'row',
     shadowOffset:{  width: 2,  height: 3,  },
     shadowColor: 'black',
     shadowOpacity: 0.3,
     borderRadius: 2,
     marginHorizontal: 10,
+    paddingVertical:10,
     paddingTop: 10,
     marginTop:5, 
     backgroundColor: 'white'
@@ -59,9 +59,17 @@ export default StyleSheet.create({
     marginLeft: 10,
     justifyContent:'center'
   },
-  commonMarginView:{
-    marginLeft: 30,
+  commonColumnView1:{
+    paddingVertical: 10,
+    marginLeft: 10,
     justifyContent:'center'
+  },
+  commonMarginView:{
+    flex:1,
+    flexDirection:'row',
+    alignItems: 'center',
+    justifyContent:'flex-end',
+    paddingRight:20,
   },
   shadowView: {
     shadowOffset:{  width: 1,  height: 2,  },
@@ -69,6 +77,16 @@ export default StyleSheet.create({
     shadowOpacity: 0.2,
     borderRadius: 2,
     marginTop: 10,
+    flexDirection:'row',
+    backgroundColor:'white',
+    marginHorizontal: 10,
+  },
+  shadowView1: {
+    shadowOffset:{  width: 1,  height: 2,  },
+    shadowColor: 'black',
+    shadowOpacity: 0.2,
+    borderRadius: 2,
+    marginTop: 5,
     flexDirection:'row',
     backgroundColor:'white',
     marginHorizontal: 10,
@@ -83,15 +101,18 @@ export default StyleSheet.create({
   },
   plusText:{
     color: '#e9919c',
-    textAlign: 'right'
+    textAlign: 'right',
+    fontFamily: 'CORBEL',
   },
   text: {
     color: '#e9919c',
     marginLeft: 10,
+    fontFamily: 'CORBEL',
   },
   redText:{
     color: '#e9919c',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'CORBEL',
   },
   buttonColumnView:{
 
@@ -99,23 +120,26 @@ export default StyleSheet.create({
   rowflexView:{
     flexDirection: 'row',
     borderTopWidth: 1,
-    paddingTop: 20,
+    paddingVertical: 20,
     borderColor: '#b9b2b2',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
+    marginTop: 10,
 
   },
   smallshaText:{
-    fontSize: 12,
+    marginTop: 10,
+    fontSize: 10,
     color: '#b9b2b2',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'CORBEL',
   },
   smallshaText1:{
     fontSize: 14,
-    color: '#b9b2b2',
     marginLeft: 10,
     marginTop:10,
+    fontFamily: 'CORBEL',
   },
   eachView:{
     alignItems: 'center',
@@ -128,25 +152,33 @@ export default StyleSheet.create({
   },
   rowView:{
     flexDirection:'row',
-    paddingHorizontal: 80,
     alignItems: 'center',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
+    marginTop: 20,
   },
   largeText:{
-    fontSize: 20,
+    fontSize: 26,
     fontFamily: 'CORBEL',
+    fontWeight: '200'
   },
   smallText: {
     fontSize: 14,
-
+    fontFamily: 'CORBEL',
+    color: '#b9b2b2',
+  },
+  smallblackText: {
+    fontSize: 14,
+    fontFamily: 'CORBEL',
   },
   columnText:{
     fontSize: 14,
-
+    fontFamily: 'CORBEL',
   },
   mexcianText:{
-    fontSize: 14,
-    textAlign:'center'
+    textAlign:'center',
+    fontSize: 16,
+    fontFamily: 'CORBEL',
+    color: '#b9b2b2',
   },
   columnView:{
     alignItems: 'center',
@@ -178,6 +210,9 @@ export default StyleSheet.create({
   searchImage: {
     marginLeft: 10
   },
+  categoriesImage:{
+    marginRight: 5
+  },
   headerTextInput: {
     flex: 1,
     marginLeft: 10,
@@ -199,7 +234,7 @@ export default StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     backgroundColor: '#0d9f67',
-    paddingVertical:20,
+    paddingVertical:15
   },
   tabText:{
     color: '#deb4ab',
@@ -255,7 +290,7 @@ export default StyleSheet.create({
     right: 12,
   },
   starImage:{
-    
+    marginLeft: 5,
   },
   likeTopImage:{
     position: 'absolute',

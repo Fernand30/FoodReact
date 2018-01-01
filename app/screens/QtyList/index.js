@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, ScrollView, Text, Image, FlatList, TouchableOpacity, ActivityIndicator, TextInput } from "react-native"
+import { View, ScrollView, Text, Image, FlatList, TouchableOpacity, ActivityIndicator, TextInput,ImageBackground } from "react-native"
 import BasicButton from '../../components/BasicButton'
 import {removePlateFromCart} from '../../actions/cart'
 import { connect } from 'react-redux'
@@ -72,11 +72,19 @@ class Cart extends Component {
     Actions.yourcart()
   }
 
+  goback(){
+    Actions.pop()
+  }
+
   render() {
     let cart = JSON.stringify(this.props.cart)
     return (
       <View style = {styles.container}>
+        <ScrollView>
           <Image source={Images.food} style={styles.foodImage}/>
+          <TouchableOpacity onPress={this.goback.bind(this)} style={styles.backImage}>
+              <Image source={Images.arrow_right}/>
+          </TouchableOpacity>    
           <View style={styles.absoluteView}>
                <View style={styles.shadowView}>
                    <View style={styles.commonColumnView}>
@@ -153,13 +161,15 @@ class Cart extends Component {
                       </View>
                   </View>  
                   <View style={styles.bbView}> 
-                      <TouchableOpacity onPress={this.goY.bind(this)}>
+                      <TouchableOpacity onPress={this.goY.bind(this)} style={styles.buttonView}>
                           <View style={styles.bottomButton}>
-                              <Text style={styles.addbottomText}>ADD TO CART($11.00)</Text>
+                              <Text style={styles.addbottomText}>ADD TO CART</Text>
+                              <Text style={styles.numberText}>($11.00)</Text>
                           </View>
                       </TouchableOpacity>    
                   </View>      
-          </View>              
+          </View>
+        </ScrollView>                
       </View>
     )
   }

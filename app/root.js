@@ -15,9 +15,11 @@ import MenuItem from './screens/MenuItem';
 import Profile from './screens/Profile';
 import CartOptions from './screens/CartOptions';
 import Qty from './screens/Qty';
+import QtyList from './screens/QtyList';
 import YourCart from './screens/YourCart';
 import ReviewAddress from './screens/ReviewAddress';
 import PaymentMethod from './screens/PaymentMethod';
+import ConfirmOrder from './screens/ConfirmOrder';
 
 const Routes = () => (
 
@@ -31,9 +33,12 @@ const Routes = () => (
       <Scene key = "profile" component = {Profile} hideNavBar={true} {...this.props} />
       <Scene key = "cartoptions" component = {CartOptions} hideNavBar={true} {...this.props} />
       <Scene key = "qty" component = {Qty} hideNavBar={true} {...this.props} />
+      <Scene key = "qtylist" component = {QtyList} hideNavBar={true} {...this.props} />
+      
       <Scene key = "yourcart" component = {YourCart} hideNavBar={true} {...this.props} />
       <Scene key = "reviewaddress" component = {ReviewAddress} hideNavBar={true} {...this.props} />
       <Scene key = "paymentmethod" component = {PaymentMethod} hideNavBar={true} {...this.props} />
+      <Scene key = "confirmorder" component = {ConfirmOrder} hideNavBar={true} {...this.props} />
     </Scene>
  </Router>
 

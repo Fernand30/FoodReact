@@ -21,7 +21,8 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 20,
     textAlign: 'center',
-    flex: 1
+    flex: 1,
+    fontFamily: 'CORBEL',
   },
   shadowView: {
     shadowOffset:{  width: 2,  height: 3,  },
@@ -29,19 +30,22 @@ export default StyleSheet.create({
     shadowOpacity: 0.3,
     borderRadius: 2,
     marginTop: 20,
-    marginHorizontal: 10,
+    marginHorizontal: 20,
     paddingHorizontal: 10,
-    paddingTop: 15,
+    paddingVertical: 20,
     flexDirection:'row',
     justifyContent:'space-between',
     alignItems:'center'
   },
+  greenCheck:{
+    marginRight: 20,
+  },
+  dropdown:{
+    marginLeft: 10,
+  },
   shadowColumnView: {
-    shadowOffset:{  width: 2,  height: 3,  },
-    shadowColor: 'black',
-    shadowOpacity: 0.3,
-    borderRadius: 2,
-    marginHorizontal: 10,
+    
+    marginHorizontal: 20,
     marginTop: 10,
   },
   shadowColumnView1: {
@@ -56,13 +60,59 @@ export default StyleSheet.create({
   smallText:{
     fontSize:14,
     color: '#b9b2b2',
-    backgroundColor:'transparent'
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
+  },
+  comonflexRowView:{
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'space-between'
+  },
+  smallText2:{
+    fontSize:14,
+    color: '#9b9b9b',
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
+    marginLeft: 10,
+  },
+  smallText1:{
+    fontSize:14,
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
+    marginTop: 10,
+  },
+  smallunshaText:{
+    fontSize:14,
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
+  },
+  selectButtonView:{
+    marginTop: 10,
+    paddingHorizontal: 20,
+  },
+  selectButton:{
+    backgroundColor:'#0d9f67',
+    borderRadius: 5,
+    height:30,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  unselectButton:{
+    backgroundColor:'#0d9f67',
+    borderRadius: 5,
+    height:30,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  selectbuttonText:{
+    color: 'white',
+    fontSize: 14,
+    fontFamily: 'CORBEL'
   },
   itemText:{
-    fontSize: 16,
-    marginLeft: 10,
-    marginTop: 10,
-    color: '#b9b2b2',
+    fontSize: 14,
+    marginLeft: 20,
+    marginTop: 20,
   },
   rowView:{
     flexDirection: 'row',
@@ -79,32 +129,50 @@ export default StyleSheet.create({
   },
   columnText:{
     fontSize: 14,
+    fontFamily: 'CORBEL',
   },
   largeText:{
     fontSize: 18,
+    fontFamily: 'CORBEL',
   },
   smallshaText:{
     fontSize: 12,
     color: '#b9b2b2',
     marginTop: 10,
+    fontFamily: 'CORBEL',
   },
   shaText:{
     marginLeft: 10,
     fontSize: 16,
     color: '#b9b2b2',
+    fontFamily: 'CORBEL',
   },
   underlineView:{
-    paddingVertical: 20,
+    marginTop: 10,
+  },
+  underlineView1:{
+    paddingVertical: 10,
+    flexDirection:'row',
+    borderColor: '#b9b2b2',
     borderBottomWidth: 1,
-    borderColor: '#9b9b9b',
+    paddingHorizontal: 20,
+    justifyContent:'space-between',
+    paddingHorizontal:20,
+    alignItems:'center'
+  },
+  checkView:{
+    width: 20,
+    height: 20,
+    alignItems:'center',
     justifyContent:'center',
-    paddingLeft: 10,
+    backgroundColor:'#9b9b9b'
   },
   redText:{
     marginLeft: 30,
     fontSize: 14,
     color: '#fa7d64',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: 'CORBEL',
   },
   rowflexView:{
     flexDirection: 'row',
@@ -125,6 +193,15 @@ export default StyleSheet.create({
   commonText:{
     fontSize : 14,
     marginLeft: 20,
+    fontFamily: 'CORBEL',
+  },
+  textInput:{
+    borderBottomWidth: 1,
+    borderColor: '#b9b2b2',
+    justifyContent: 'center',
+    height: 30,
+    fontSize: 16,
+    fontFamily: 'CORBEL'
   },
   commonText2:{
     fontSize : 14,
@@ -134,7 +211,8 @@ export default StyleSheet.create({
   commonText1:{
     fontSize : 16,
     flex: 1,
-    textAlign: 'right'
+    textAlign: 'right',
+    fontFamily: 'CORBEL',
   },
   columnView:{
     marginTop:10,
@@ -209,35 +287,48 @@ export default StyleSheet.create({
     fontSize: 14,
     color:'#fa7d64',
     textAlign:'center',
+    fontFamily: 'CORBEL',
   },
   smallBlackText:{
     fontSize: 14,
     textAlign:'center',
     color: '#b9b2b2',
+    fontFamily: 'CORBEL',
   },
   underlinerowView:{
     flexDirection:'row',
-    borderBottomWidth: 1,
-    borderColor: '#9b9b9b',
     justifyContent:'space-between',
-    alignItems:'center'
+    alignItems:'center',
+    marginTop: 20,
+    marginBottom:10,
+  },
+  containerStyle:{
+    backgroundColor:'black',
   },
   leftView:{
-    flex:1,
-    borderRightWidth: 1,
+    flex:2,
+    borderWidth: 1,
     borderColor: '#c6c6c6',
-    paddingVertical:20,
-    paddingLeft: 10,
+    marginRight: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 5
+  },
+  checkText:{
+    backgroundColor:'transparent',
+    fontFamily: 'CORBEL',
+    fontSize: 14
   },
   rightView:{
     flex:1,
+    borderWidth: 1,
+    borderColor: '#c6c6c6',
+    marginLeft: 10,
+    paddingVertical: 5,
+    paddingHorizontal: 5
+  },
+  childRowView: {
     flexDirection:'row',
-    paddingHorizontal:10,
     alignItems:'center',
-    justifyContent:'space-between',
-    paddingVertical:20,
-    paddingHorizontal: 10,
   }
-
 
 })

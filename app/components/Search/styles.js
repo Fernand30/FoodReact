@@ -1,9 +1,9 @@
 import {StyleSheet} from 'react-native'
 const React = require("react-native");
 const { Dimensions, Platform } = React;
-import { responsiveHeight, responsiveWidth, responsiveFontSize } from 'react-native-responsive-dimensions';
+import {Colors, Fonts, Metrics, Images, Constants} from "../../themes"
 const deviceHeight = Dimensions.get("window").height;
-const imagesize = responsiveHeight(10);
+
 export default StyleSheet.create({
   container: {
     flex: 1,
@@ -15,35 +15,28 @@ export default StyleSheet.create({
     height: null
   },
   menu_hamburger:{
-    marginLeft: 10,
-    marginTop: 10,
+    marginLeft: Constants.Marin4,
+    marginTop: Constants.Marin4,
 
   },
-  headerView: {
-    marginTop: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 10
-  },
   text: {
-    fontSize: 40,
+    fontSize: Constants.Font6,
     color:'white',
-    marginTop: 150,
-    marginLeft: 20,
+    marginTop: Constants.Marin20,
+    marginLeft: Constants.Marin4,
     backgroundColor: 'transparent',
     fontFamily: 'CORBEL',
   },
   inputView:{
     flexDirection: 'row',
-    marginTop: 40,
-    marginHorizontal: 20,
+    marginTop: Constants.Marin4,
+    marginHorizontal: Constants.Marin4,
     borderRadius: 5,
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'space-between',
-    height: 50,
-    paddingHorizontal: 10
+    height: Constants.Marin12,
+    paddingHorizontal: Constants.Marin2
   },
   textInput:{
     flex: 1,
@@ -64,17 +57,17 @@ export default StyleSheet.create({
     backgroundColor: 'transparent'
   },
   buttonView: {
-    marginTop: 10,
-    marginHorizontal: 20,
+    marginTop: Constants.Marin4,
+    marginHorizontal: Constants.Marin4,
     borderRadius: 5,
     backgroundColor: '#fa7d64',
     alignItems:'center',
     justifyContent: 'center',
-    height: 50,
+    height: Constants.Marin12,
   },
   buttonText:{
     color: 'white',
-    fontSize: 16,
+    fontSize: Constants.Font2,
     fontFamily: 'CORBEL',
   }
 })
