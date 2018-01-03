@@ -21,6 +21,7 @@ class Cart extends Component {
       check1: true,
       check2: false,
       check3: false,
+      number: 1
     })
 }
   
@@ -74,6 +75,20 @@ class Cart extends Component {
 
   goback(){
     Actions.pop()
+  }
+
+  plus(){
+    this.setState({
+      number: this.state.number+1
+    })
+  }
+
+  minus(){
+    if(this.state.number>1){
+      this.setState({
+        number: this.state.number-1
+      })
+    }
   }
 
   render() {
@@ -155,9 +170,13 @@ class Cart extends Component {
                   </View> 
                   <View style={styles.centerView}> 
                       <View style={styles.addButton}>
-                          <Text style={styles.addbuttonText}>-</Text>
-                          <Text style={styles.addbuttonText}>1</Text>
-                          <Text style={styles.addbuttonText}>+</Text>
+                          <TouchableOpacity onPress={this.minus.bind(this)}>
+                              <Text style={styles.addbuttonText}>-</Text>
+                          </TouchableOpacity>
+                          <Text style={styles.addbuttonText}>{this.state.number}</Text>
+                          <TouchableOpacity  onPress={this.plus.bind(this)}>
+                              <Text style={styles.addbuttonText}>+</Text>
+                          </TouchableOpacity>
                       </View>
                   </View>  
                   <View style={styles.bbView}> 

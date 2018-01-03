@@ -179,8 +179,7 @@ class Cart extends Component {
            
            <View style={styles.bottomView}>
               <TouchableOpacity onPress={this.goConfirm.bind(this)} style={styles.buttonView} >
-                  <Text style={styles.buttonText}>CONTINUE TO CONFIRM</Text>
-                  <Text style={styles.numberText}> ($13.59)</Text>
+                  <Text style={styles.buttonText}>REVIEW ORDER(NEXT STEP)</Text>
               </TouchableOpacity>
            </View>  
       </View>

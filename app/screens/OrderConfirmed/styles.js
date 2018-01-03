@@ -15,27 +15,71 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     paddingHorizontal: Constants.Marin4
   },
-  text: {
-    textAlign: 'center'
+  Bg: {
+    width: Constants.width,
+    height: Constants.height/5
   },
-  headerTextInputView: {
+  congrate:{
+    position:'absolute',
+    top:20,
+    left:20,
+    width: Constants.width-40,
+    height: Constants.height/5,
+    alignItems:'center',
+    paddingTop: 30,
+    backgroundColor:'white',
+    borderColor: '#cacaca',
+    borderWidth:1
+  },
+  congrateText:{
+    fontFamily:'CORBEL',
+    fontSize: 22,
+    fontWeight: 'bold',
+  },
+  receiveText:{
+    marginTop: 20,
+    fontFamily:'CORBEL',  
+    fontSize: 16,
+  },
+  scrollHeader: {
+    alignItems: 'center',
+    paddingTop: 40,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderColor: '#cacaca'
+  },
+  titleText:{
+    color: 'white',
+    fontSize: 22,
+    textAlign: 'center',
     flex: 1,
-    flexDirection: 'row',
-    height: Constants.Marin12,
-    borderRadius: 3,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    marginHorizontal: Constants.Marin2,
-    marginTop: Constants.Marin2,
-    marginBottom: Constants.Marin2,
+    fontFamily: 'CORBEL',
   },
-  HeaderSearchTabView:{
-    marginTop: Constants.Marin2,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: "#fa7d64",
-    paddingHorizontal: Constants.Marin2,
+  scrollText:{
+    fontFamily: 'CORBEL',
+    fontSize: 16,
+  },
+  flexText:{
+    fontFamily: 'CORBEL',
+    fontSize: 14,
+  },
+  callText:{
+    fontFamily: 'CORBEL',
+    fontSize: 12,
+    color: '#295ee6',
+    marginLeft:5,
+    marginTop: 5,
+  },
+  shaText:{
+    fontFamily: 'CORBEL',
+    fontSize: 14,
+    marginLeft: 20,
+    color: '#dadada',
+  },
+  shaText1:{
+    fontFamily: 'CORBEL',
+    fontSize: 14,
+    color: '#dadada',
   },
   searchImage: {
     marginLeft: Constants.Marin2,
@@ -46,12 +90,8 @@ export default StyleSheet.create({
     color: "#fa7d64",
     fontSize:Constants.Font16,
   },
-  TabView:{
-    marginTop: Constants.Marin2,
+  rowView:{
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: Constants.Marin2,
   },
   selecTabText:{
     color: 'white',
@@ -63,26 +103,52 @@ export default StyleSheet.create({
     fontFamily: 'CORBEL',
     fontSize: Constants.Font2
   },
-  scrollView:{
-    flex: 1,
-    backgroundColor: '#f5f5f8',
+  dateView:{
+    width: Constants.width/4,
+    paddingLeft: 10,
+    justifyContent:'center'
   },
-  headerRightView:{
+  circleView:{
+    width: Constants.width/8,
+    alignItems:'center'
+  },
+  grayBar:{
+    width:1,
+    backgroundColor:'#e9e9e9',
+    height: Constants.width/10,
+  },
+  greenBar:{
+    width:1,
+    backgroundColor:'#1fc435',
+    height: Constants.width/10,
+  },
+  greenBar1:{
+    width:1,
+    backgroundColor:'#1fc435',
+    height: Constants.width/20,
+  },
+  greenCircle:{
+    width: Constants.width/8,
+    height: Constants.width/8,
+    alignItems:'center',
     justifyContent:'center',
-    marginTop: Constants.Marin1,
+    borderWidth:1,
+    borderColor: '#1fc435',
+    borderRadius: Constants.width/16,
   },
-  lookButton:{
-    marginTop: Constants.Marin4,
-    marginBottom: Constants.Marin2,
-    flexDirection: 'row',
-    height: Constants.Marin12,
-    marginHorizontal: Constants.Marin4,
-    borderRadius: 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    shadowOffset:{  width: 1,  height: 3,  },
-    shadowColor: 'black',
-    shadowOpacity: 0.2,
+  remainView:{
+    flex:1,
+    paddingLeft:20,
+  },
+  remainrowView:{
+    flex:1,
+    paddingLeft:20,
+    flexDirection:'row'
+  },
+  liv:{
+    width:Constants.width/10,
+    height:Constants.width/10,
+    resizeMode:'cover'
   },
   notificationview:{
     position: 'absolute',
@@ -99,10 +165,10 @@ export default StyleSheet.create({
     fontSize: Constants.Font1,
     color: '#fa7d64'
   },
-  buttonText:{
-    color: '#fa7d64',
-    fontFamily: 'CORBEL',
-    fontSize: 16
+  spoon:{
+    height: Constants.width/16,
+    width: Constants.width/20,
+    resizeMode:'stretch'
   },
   itemView:{
     alignItems: 'center'

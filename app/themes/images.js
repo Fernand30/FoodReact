@@ -31,6 +31,13 @@ const images = {
     dropdown : require('../images/dropdown.png'),
     close : require('../images/close.png'),
     done : require('../images/done.png'),
+    flag : require('../images/flag.png'),
+    Bg : require('../images/Bg.png'),
+    Fill : require('../images/Fill.png'),
+    phone : require('../images/phone.png'),
+    spoon : require('../images/spoon.png'),
+    LIVREUSE : require('../images/LIVREUSE.png'),
+    blackcheck : require('../images/blackcheck.png'),
 }
 
 export default images;

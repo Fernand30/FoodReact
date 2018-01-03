@@ -20,6 +20,11 @@ import YourCart from './screens/YourCart';
 import ReviewAddress from './screens/ReviewAddress';
 import PaymentMethod from './screens/PaymentMethod';
 import ConfirmOrder from './screens/ConfirmOrder';
+import OrderConfirmed from './screens/OrderConfirmed';
+import SignIn from './screens/SignIn';
+import SignUp from './screens/SignUp';
+import AccountSetting from './screens/AccountSetting';
+import OrderHistory from './screens/OrderHistory';
 
 const Routes = () => (
 
@@ -39,6 +44,11 @@ const Routes = () => (
       <Scene key = "reviewaddress" component = {ReviewAddress} hideNavBar={true} {...this.props} />
       <Scene key = "paymentmethod" component = {PaymentMethod} hideNavBar={true} {...this.props} />
       <Scene key = "confirmorder" component = {ConfirmOrder} hideNavBar={true} {...this.props} />
+      <Scene key = "confirmedorder" component = {OrderConfirmed} hideNavBar={true} {...this.props} />
+      <Scene key = "signin" component = {SignIn} hideNavBar={true} {...this.props} />
+      <Scene key = "signup" component = {SignUp} hideNavBar={true} {...this.props} />
+      <Scene key = "accountsetting" component = {AccountSetting} hideNavBar={true} {...this.props} />
+      <Scene key = "orderhistory" component = {OrderHistory} hideNavBar={true} {...this.props} />
     </Scene>
  </Router>
 

@@ -16,7 +16,6 @@ class Home extends Component{
     
     return (
       <View style = {{flex: 1}}>
-      
         <Search/>
       </View>
     )

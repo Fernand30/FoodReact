@@ -9,6 +9,8 @@ const Constants = {
     Primary_Input_FontSize : responsiveFontSize(2.5),
     textInputHeight1:responsiveHeight(5),
     textInputHeight2:responsiveHeight(4),
+    width: responsiveWidth(100),
+    height: responsiveHeight(100),
 
     Marin0: responsiveWidth(0),
     Marin1: responsiveWidth(1),
@@ -41,6 +43,8 @@ const Constants = {
     Font20: responsiveFontSize(2),
     Font25: responsiveFontSize(2.5),
     Font30: responsiveFontSize(3),
+    Font40: responsiveFontSize(4),
+    Font50: responsiveFontSize(5),
 }
 
 export default Constants;

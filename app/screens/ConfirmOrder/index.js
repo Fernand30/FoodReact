@@ -75,6 +75,10 @@ class Cart extends Component {
     Actions.reviewaddress()
   }
 
+  goConfirmed(){
+    Actions.confirmedorder()
+  }
+
   render() {
     let cart = JSON.stringify(this.props.cart)
     return (
@@ -134,30 +138,34 @@ class Cart extends Component {
            </View>
            <View style={styles.shadowView1}>
                <View style={styles.rowflexView}>
-                    <Image source={Images.addcheck}/>
+                    <View style={{width:20}}>
+                      <Image source={Images.addcheck}/>
+                    </View>
                     <Text style={styles.commonText}>1 x Jalapeno Burger w/Drink</Text>
                     <Text style={styles.commonText1}>$4.00</Text>  
                </View>
                
                <View style={styles.rowflexView}>
-                    <View style={{width:10}}/>
+                    <View style={{width:20}}/>
                     <Text style={styles.commonText2}>Coke</Text>
                     <View style={{flex:1}}/>
                </View>
            </View>
            <View style={styles.shadowView1}>
                <View style={styles.rowflexView}>
-                    <Image source={Images.addcheck}/>
+                    <View style={{width:20}}>
+                      <Image source={Images.addcheck}/>
+                    </View>
                     <Text style={styles.commonText}>1 x Mashroom Burrito w / Drink</Text>
                     <Text style={styles.commonText1}>$9.95</Text>  
                </View>
                <View style={styles.rowflexView}>
-                    <View style={{width: 10}}/>
+                    <View style={{width: 20}}/>
                     <Text style={styles.commonText2}>Sprits</Text>
                     <View style={{flex:1}}/>
                </View>
                <View style={styles.rowflexView}>
-                    <View style={{width:10}}/>
+                    <View style={{width:20}}/>
                     <Text style={styles.commonText2}>Extra Sauce</Text>
                     <View style={{flex:1}}/>
                </View>
@@ -200,9 +208,8 @@ class Cart extends Component {
               <Text style={styles.commonText}>$13.59</Text>
            </View>
            <View style={styles.bottomView}>
-              <TouchableOpacity style={styles.buttonView} >
-                  <Text style={styles.buttonText}>CONTINUE TO CONFIRM</Text>
-                  <Text style={styles.numberText}> ($13.59)</Text>
+              <TouchableOpacity onPress={this.goConfirmed.bind(this)} style={styles.buttonView} >
+                  <Text style={styles.buttonText}>PLACE YOUR ORDER</Text>
               </TouchableOpacity>
            </View>  
       </View>

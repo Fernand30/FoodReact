@@ -19,8 +19,8 @@ export default StyleSheet.create({
     marginTop: Constants.Marin4,
 
   },
-  text: {
-    fontSize: Constants.Font6,
+  whereText: {
+    fontSize: Constants.Font50,
     color:'white',
     marginTop: Constants.Marin20,
     marginLeft: Constants.Marin4,
@@ -41,7 +41,7 @@ export default StyleSheet.create({
   textInput:{
     flex: 1,
     justifyContent: 'center',
-    marginLeft: 10,
+    paddingLeft: 20,
   },
   questionView:{
     alignItems:'center',

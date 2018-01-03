@@ -65,6 +65,7 @@ export default StyleSheet.create({
     marginHorizontal: 10,
     paddingHorizontal: 10,
     paddingTop: 15,
+    paddingBottom: 5,
     backgroundColor:'white'
   },
   rowView:{
@@ -131,14 +132,14 @@ export default StyleSheet.create({
     paddingVertical:10,
   },
   tipeachView1:{
-    width: 40,
+    width: 50,
     height: 40,
     backgroundColor:'black',
     borderWidth:1,
     paddingTop:2,
   },
   tipeachView2:{
-    width: 40,
+    width: 50,
     height: 40,
     borderColor:'#9b9b9b',
     borderWidth:1,
@@ -155,7 +156,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems:'center',
     justifyContent:'space-between',
-    paddingHorizontal: 20,
     backgroundColor:'white'
   },
   shadowView1:{
@@ -194,7 +194,6 @@ export default StyleSheet.create({
   },
   commonText:{
     fontSize : 14,
-    marginLeft: 20,
     fontFamily: 'CORBEL',
   },
   commonText2:{
@@ -215,6 +214,7 @@ export default StyleSheet.create({
     paddingVertical:10,
     backgroundColor: 'white',
     paddingBottom : 10,
+    paddingHorizontal:20
   },
   totalView:{
     flexDirection: 'row',

@@ -24,7 +24,7 @@ export default StyleSheet.create({
     flex: 1,
     fontFamily: 'CORBEL',
   },
-  shadowView: {
+  shadowView: { 
     shadowOffset:{  width: 2,  height: 3,  },
     shadowColor: 'black',
     shadowOpacity: 0.3,
@@ -33,6 +33,7 @@ export default StyleSheet.create({
     marginHorizontal: 10,
     paddingHorizontal: 10,
     paddingTop: 15,
+    paddingBottom:5,
     backgroundColor:'white'
   },
   rowView:{
@@ -70,7 +71,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems:'center',
     justifyContent:'space-between',
-    paddingHorizontal: 20,
     backgroundColor:'white'
   },
   shadowView1:{
@@ -87,7 +87,7 @@ export default StyleSheet.create({
   },
   commonText:{
     fontSize : 14,
-    marginLeft: 20,
+    fontFamily:'CORBEL'
   },
   commonText2:{
     fontSize : 14,
@@ -108,6 +108,7 @@ export default StyleSheet.create({
     paddingVertical:10,
     backgroundColor: 'white',
     paddingBottom : 10,
+    paddingHorizontal: 20,
   },
   totalView:{
     flexDirection: 'row',

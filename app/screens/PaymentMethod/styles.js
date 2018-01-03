@@ -2,6 +2,7 @@ import {StyleSheet} from 'react-native'
 const React = require("react-native");
 const { Dimensions, Platform } = React;
 import { responsiveHeight, responsiveWidth, responsiveFontSize } from 'react-native-responsive-dimensions';
+import {Colors, Fonts, Metrics, Images, Constants} from "../../themes"
 const deviceHeight = Dimensions.get("window").height;
 const imagesize = responsiveHeight(10);
 export default StyleSheet.create({
@@ -310,8 +311,8 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#c6c6c6',
     marginRight: 10,
-    paddingVertical: 5,
-    paddingHorizontal: 5
+    height: Constants.Marin14,
+    paddingLeft: 5
   },
   checkText:{
     backgroundColor:'transparent',
@@ -323,8 +324,8 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#c6c6c6',
     marginLeft: 10,
-    paddingVertical: 5,
-    paddingHorizontal: 5
+    height: Constants.Marin14,
+    paddingLeft: 5
   },
   childRowView: {
     flexDirection:'row',
